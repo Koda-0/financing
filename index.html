@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Digital Savings Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, rgba(0, 0, 128, 0.9) 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="text-2xl font-bold text-purple-600">👪</div>
+                    <h1 class="text-xl font-bold text-gray-800">MyChild</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-purple-600">Features</a>
+                    <a href="#roles" class="text-gray-600 hover:text-purple-600">For Users</a>
+                    <a href="#faq" class="text-gray-600 hover:text-purple-600">FAQ</a>
+                </div>
+                <div class="flex space-x-4">
+                    <button onclick="window.location.href='./login.html'" class="px-4 py-2 text-purple-600 border border-purple-600 rounded-3xl hover:bg-purple-50 text-sm">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 capitalize">Start Saving for your chilren safely and samatly</h2>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">A family-focused digital platform that helps you systematically save and manage funds for your children with transparency and control.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button  class="px-8 py-4 bg-white text-purple-600 font-bold rounded-lg hover:bg-gray-100 transition">Get Started</button>
+                <button class="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:bg-opacity-10 transition">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section id="features" class="py-16 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Why Choose MyChild ?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Feature 1 -->
+                <div class="card-hover p-6 bg-gray-50 rounded-lg border border-gray-200">
+                    <div class="text-4xl mb-4">🔐</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Secure Authentication</h3>
+                    <p class="text-gray-600">Phone number verification with PIN-based authentication ensures only authorized access to savings accounts.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="card-hover p-6 bg-gray-50 rounded-lg border border-gray-200">
+                    <div class="text-4xl mb-4">👨‍👩‍👧‍👦</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Multiple Child Goals</h3>
+                    <p class="text-gray-600">Create and manage individual savings goals for each child, organized by purpose and timeline.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="card-hover p-6 bg-gray-50 rounded-lg border border-gray-200">
+                    <div class="text-4xl mb-4">📊</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Real-Time Tracking</h3>
+                    <p class="text-gray-600">Monitor every transaction with complete audit trails and transparent fund management.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="card-hover p-6 bg-gray-50 rounded-lg border border-gray-200">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Milestone Release</h3>
+                    <p class="text-gray-600">Release funds based on predefined ages, milestones, or purposes: education, entrepreneurship, life startup.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="card-hover p-6 bg-gray-50 rounded-lg border border-gray-200">
+                    <div class="text-4xl mb-4">📱</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Mobile-First Design</h3>
+                    <p class="text-gray-600">Fully responsive platform optimized for smartphones, tablets, and desktops for seamless experience.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="card-hover p-6 bg-gray-50 rounded-lg border border-gray-200">
+                    <div class="text-4xl mb-4">💳</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Mobile Money Ready</h3>
+                    <p class="text-gray-600">Integrated with mobile money services for convenient deposits and withdrawals.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- User Roles Section -->
+    <section id="roles" class="py-16 px-4 bg-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">For Everyone in Your Family</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Parents -->
+                <div class="card-hover bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-5xl mb-4">👨‍👩‍👧</div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">For Parents</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li>✓ Create secure savings accounts</li>
+                        <li>✓ Set savings goals for each child</li>
+                        <li>✓ Make regular contributions</li>
+                        <li>✓ View complete transaction history</li>
+                        <li>✓ Control fund release conditions</li>
+                        <li>✓ Get savings insights & reports</li>
+                    </ul>
+                    <button  class="mt-6 w-full px-4 py-3 bg-purple-600 text-white font-bold rounded-lg hover:bg-purple-700">Sign Up as Parent</button>
+                </div>
+
+                <!-- Children -->
+<div class="card-hover bg-white p-8 rounded-lg shadow-md">
+    <div class="text-5xl mb-4">👨👩</div>
+    <h3 class="text-2xl font-bold mb-4 text-gray-800">Relatives</h3>
+    <ul class="space-y-3 text-gray-600">
+        <li>✓ Deposit funds for children</li>
+        <li>✓ View fund availability for each child</li>
+        <li>✓ Receive notifications about savings goals</li>
+    </ul>
+    <button class="mt-6 w-full px-4 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700">
+        Login as Relative
+    </button>
+</div>
+
+
+                <!-- Admin -->
+                <div class="card-hover bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-5xl mb-4">⚙️</div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">For Admins</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li>✓ Manage platform users</li>
+                        <li>✓ Monitor all transactions</li>
+                        <li>✓ Generate reports</li>
+                        <li>✓ Handle disputes</li>
+                        <li>✓ System configuration</li>
+                        <li>✓ Security management</li>
+                    </ul>
+                    <button  class="mt-6 w-full px-4 py-3 bg-gray-800 text-white font-bold rounded-lg hover:bg-gray-900">Login as Admin</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">How It Works</h2>
+            <div class="space-y-8">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-600 text-white text-xl font-bold">1</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800">Create Your Account</h3>
+                        <p class="text-gray-600">Sign up using your phone number and secure PIN. Verify your identity in minutes.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-600 text-white text-xl font-bold">2</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800">Set Savings Goals</h3>
+                        <p class="text-gray-600">Create individual savings goals for each child, specifying purpose and target amount.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-600 text-white text-xl font-bold">3</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800">Make Contributions</h3>
+                        <p class="text-gray-600">Deposit funds using mobile money or linked payment methods. Track progress in real-time.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-600 text-white text-xl font-bold">4</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800">Release at Milestones</h3>
+                        <p class="text-gray-600">Funds are automatically released when children reach target age or milestone is achieved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 px-4 bg-gray-100">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Frequently Asked Questions</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">Is my money secure?</h3>
+                    <p class="text-gray-600">Yes! We use enterprise-grade encryption, secure PIN hashing, and comply with all financial regulations. Your funds are protected at all times.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">What are the minimum and maximum amounts I can save?</h3>
+                    <p class="text-gray-600">There are no strict limits. Start with as little as RWF 500 and save as much as you need for your child's future goals.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">How are funds released to my child?</h3>
+                    <p class="text-gray-600">You set release conditions (age, milestone, or date). When met, funds can be transferred to the child's account or used for approved purposes.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">Can my child see the savings?</h3>
+                    <p class="text-gray-600">Yes! Children have limited access to view their savings progress, which helps them understand the value of long-term planning.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">What if I forget my PIN?</h3>
+                    <p class="text-gray-600">You can reset your PIN through phone verification. We'll send a reset code to your registered number.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">Is there a cost to use FutureVault?</h3>
+                    <p class="text-gray-600">Our basic platform is free to use. Optional premium features and integrations may have nominal fees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gradient-bg text-white py-16 px-4">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Start Building Your Child's Financial Future Today</h2>
+            <p class="text-xl mb-8">Join thousands of parents securing their children's tomorrow with FutureVault.</p>
+            <button onclick="showSignup('parent')" class="px-8 py-4 bg-white text-purple-600 font-bold rounded-lg hover:bg-gray-100 transition">Create Your Account Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="Contact  "class="bg-gray-900 text-gray-400 py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-bold text-white mb-4">👪MyChild</h4>
+                    <p>Secure family savings for your children's future.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Platform</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="hover:text-white">Features</a></li>
+                        <li><a href="#roles" class="hover:text-white">For Users</a></li>
+                        <li><a href="#faq" class="hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-white">About Us</a></li>
+                        <li><a href="#contact" class="hover:text-white">Contact</a></li>
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p>&copy; 2025 MyChild. All rights reserved. Empowering families through secure savings.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
