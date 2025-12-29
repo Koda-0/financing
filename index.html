@@ -26,10 +26,12 @@
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="flex items-center space-x-2">
+               <a href="#home">
+                <div class="flex items-center space-x-2 hover:cursor-pointer">
                     <div class="text-2xl font-bold text-purple-600">👪</div>
                     <h1 class="text-xl font-bold text-gray-800">MyChild</h1>
                 </div>
+                </a> 
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="text-gray-600 hover:text-purple-600">Features</a>
                     <a href="#roles" class="text-gray-600 hover:text-purple-600">For Users</a>
@@ -38,19 +40,20 @@
                 </div>
                 <div class="flex space-x-4">
                     <button onclick="window.location.href='./login.html'" class="px-4 py-2 text-purple-600 border border-purple-600 rounded-3xl hover:bg-purple-50 text-sm">Sign In</button>
+                    <button  onclick="window.location.href='./deposit.html'" class="px-4 py-2 text-white border border-purple-600 rounded-3xl bg-purple-600 hover:bg-purple-700 transition text-sm">Deposit</button>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="gradient-bg text-white py-20 px-4">
+    <section id="home" class="gradient-bg text-white py-20 px-4">
         <div class="max-w-7xl mx-auto text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-6 capitalize">Start Saving for your chilren safely and samatly</h2>
             <p class="text-xl md:text-2xl mb-8 opacity-90">A family-focused digital platform that helps you systematically save and manage funds for your children with transparency and control.</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <button  onclick="window.location.href='./login.html'" class="px-8 py-4 bg-white text-purple-600 font-bold rounded-lg hover:bg-gray-100 transition">Get Started</button>
-                <button class="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:bg-opacity-10 transition">Learn More</button>
+                <button onclick="window.scrollTo(0, document.body.scrollHeight * 0.43)" class="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:bg-opacity-10 transition">Learn More</button>
             </div>
         </div>
     </section>
@@ -165,7 +168,7 @@
     <!-- How It Works -->
     <section class="py-16 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">How It Works</h2>
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">How It Works?</h2>
             <div class="space-y-8">
                 <div class="flex flex-col md:flex-row items-center gap-8">
                     <div class="flex-shrink-0">
@@ -213,7 +216,7 @@
     <!-- FAQ Section -->
     <section id="faq" class="py-16 px-4 bg-gray-100">
         <div class="max-w-3xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Frequently Asked Questions</h2>
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Frequently Asked Questions?</h2>
             
             <div class="space-y-6">
                 <div class="bg-white p-6 rounded-lg shadow-md">
@@ -223,7 +226,7 @@
 
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-lg font-bold text-gray-800 mb-3">What are the minimum and maximum amounts I can save?</h3>
-                    <p class="text-gray-600">There are no strict limits. Start with as little as RWF 500 and save as much as you need for your child's future goals.</p>
+                    <p class="text-gray-600">There are no strict limits. Here We Allow You To Save Any Amount You Have.</p>
                 </div>
 
                 <div class="bg-white p-6 rounded-lg shadow-md">
@@ -233,17 +236,17 @@
 
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-lg font-bold text-gray-800 mb-3">Can my child see the savings?</h3>
-                    <p class="text-gray-600">Yes! Children have limited access to view their savings progress, which helps them understand the value of long-term planning.</p>
+                    <p class="text-gray-600">No! Children have no  access to view their savings progress.</p>
                 </div>
 
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-bold text-gray-800 mb-3">What if I forget my PIN?</h3>
-                    <p class="text-gray-600">You can reset your PIN through phone verification. We'll send a reset code to your registered number.</p>
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">What if I forget my Password?</h3>
+                    <p class="text-gray-600">You can reset your password through phone verification. We'll send a reset code to your registered number.</p>
                 </div>
 
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-bold text-gray-800 mb-3">Is there a cost to use FutureVault?</h3>
-                    <p class="text-gray-600">Our basic platform is free to use. Optional premium features and integrations may have nominal fees.</p>
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">Is There a cost to use MyChild ?</h3>
+                    <p class="text-gray-600">Our basic platform is free to use. Except When Depositing Above 5000 We Take 1% on Deposited Amount.</p>
                 </div>
             </div>
         </div>
@@ -254,7 +257,7 @@
         <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Start Building Your Child's Financial Future Today</h2>
             <p class="text-xl mb-8">Join thousands of parents securing their children's tomorrow with MyChild.</p>
-            <button oonclick="window.location.href='./login.html'" class="px-8 py-4 bg-white text-purple-600 font-bold rounded-lg hover:bg-gray-100 transition">Create Your Account Now</button>
+            <button onclick="window.location.href='./login.html'" class="px-8 py-4 bg-white text-purple-600 font-bold rounded-lg hover:bg-gray-100 transition">Create Your Account Now</button>
         </div>
     </section>
 
